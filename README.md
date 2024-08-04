@@ -7,11 +7,12 @@
 <B>Source Port (16 bits):</B>
 The port number of the source.
 <br>
-<p>suppose 50001 is the port number given to the application of the source and 80 is the port  number of the destination</p>
 <b>Destination Port (16 bits):</b>
 The port number of the receiving application.
 
 ![image](https://github.com/user-attachments/assets/23d214b7-11f9-427d-a37c-5a773b891fd0)
+##<p>suppose 50001 is the port number given to the application of the source and 80 is the port  number of the destination</p>
+
 <br>
 Sequence Number (32 bits):
 
