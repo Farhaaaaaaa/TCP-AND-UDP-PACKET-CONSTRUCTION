@@ -11,7 +11,7 @@ The port number of the source.
 The port number of the receiving application.
 
 ![image](https://github.com/user-attachments/assets/23d214b7-11f9-427d-a37c-5a773b891fd0)
-# suppose 50001 is the port number given to the application of the source and 80 is the port  number of the destination
+<h3>suppose 50001 is the port number given to the application of the source and 80 is the port  number of the destination</h3>
 
 <br>
 Sequence Number (32 bits):
