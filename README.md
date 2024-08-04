@@ -3,7 +3,9 @@
 <h2>TCP PACKET</h2>
 
 ![Screenshot 2024-07-30 105652](https://github.com/user-attachments/assets/a78a9c99-e801-4cc9-a8a7-a51f78377296)
-<h3>Let us analyze tcp packet completely</h3>
+<h2>Let us analyze this TCP packet completely</h2>
+<p><B>source port and destination port:</B>this determines the port number of the source and destination</p>
+
 
 <h2>UDP PACKET</h2>
 
