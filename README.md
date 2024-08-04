@@ -5,21 +5,17 @@
 ![Screenshot 2024-07-30 105652](https://github.com/user-attachments/assets/a78a9c99-e801-4cc9-a8a7-a51f78377296)
 <h2>Let us analyze this TCP packet completely</h2>
 <B>Source Port (16 bits):</B>
-
 The port number of the source.
 <br>
 <b>Destination Port (16 bits):</b>
-
 The port number of the receiving application.
 
 ![image](https://github.com/user-attachments/assets/c973b5ae-91d7-4763-a65d-e3c89d17ee98)
 <br>
-Sequence Number (32 bits):
-
-It is the number of first byte in the packet which is sent.
-Acknowledgment Number (32 bits):
-
-It determines the next byte number which we are expecting from the user.
+<B>Sequence Number (32 bits):</B>
+It is the number of first byte in the packet which is sent.<br>
+<B>Acknowledgment Number (32 bits):</B>
+It determines the next byte number which we are expecting from the user.<br>
 Data Offset (4 bits):
 
 Specifies the size of the TCP header in 32-bit words. It indicates where the data begins. The minimum value is 5 (for a 20-byte header), and the maximum value is 15 (for a 60-byte header).
