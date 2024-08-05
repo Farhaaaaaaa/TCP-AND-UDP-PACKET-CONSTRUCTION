@@ -13,15 +13,19 @@ The port number of the receiving application.
 ![image](https://github.com/user-attachments/assets/c973b5ae-91d7-4763-a65d-e3c89d17ee98)
 <br>
 <B>Sequence Number (32 bits):</B>
-It is the number of first byte in the packet which is sent.<br>
+ It indicates the position of the first byte of data in the data segment.<br>
+ 
+ ![image](https://github.com/user-attachments/assets/e83cf94f-7338-4172-8e68-7d7be047f447)
+
 <B>Acknowledgment Number (32 bits):</B>
-It determines the next byte number which we are expecting from the user.<br>
-Data Offset (4 bits):
+It determines  the sequence number of the next byte of the segment that the sender is expecting to receive..<br>
 
-Specifies the size of the TCP header in 32-bit words. It indicates where the data begins. The minimum value is 5 (for a 20-byte header), and the maximum value is 15 (for a 60-byte header).
-Reserved (3 bits):
+![image](https://github.com/user-attachments/assets/745a22c4-48d8-4e67-be75-86263168c468)
 
-Reserved for future use and should be set to 0.
+<b>Data Offset (4 bits):</b>
+This field indicates the length of the TCP header in 32-bit words. The minimum value is 5 (for 20 bytes), and the maximum value is 15 (for 60 bytes).<br>
+<b>Reserved (3 bits):</b>
+Reserved for future use and should be set to 0.<br>
 Flags (9 bits):
 
 Various control flags:
