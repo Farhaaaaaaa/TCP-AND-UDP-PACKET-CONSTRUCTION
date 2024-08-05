@@ -23,11 +23,10 @@ It determines  the sequence number of the next byte of the segment that the send
 ![image](https://github.com/user-attachments/assets/745a22c4-48d8-4e67-be75-86263168c468)
 
 <b>Data Offset (4 bits):</b>
-This field indicates the length of the TCP header in 32-bit words. The minimum value is 5 (for 20 bytes), and the maximum value is 15 (for 60 bytes).<br>
+This field indicates the length of the TCP header in 32-bit words. The minimum value is 5 (for 20 bytes), and the maximum value is 15 (for 60 bytes).<br><br>
 <b>Reserved (3 bits):</b>
-Reserved for future use and should be set to 0.<br>
+Reserved for future use and should be set to 0.<br><br>
 Flags (9 bits):
-
 Various control flags:
 CWR (1 bit):  It is set by the sender to indicate that it received a TCP segment with the ECE flag set.<br>
 ECE (1 bit):  It is used to indicate congestion to the sender.<br>
@@ -36,7 +35,7 @@ ACK (1 bit):  Acknowledgment flag is said to be 1 if it contains acknowledgement
 PSH (1 bit):  Push flag is set to be 1 if we want our data to be sent immediately.<br>
 RST (1 bit):  Used to reset a connection.<br>
 SYN (1 bit):  SYN flag is set to be 1 if we want to establish a connection .<br>
-FIN (1 bit):  Used to terminate a connection.<br>
+FIN (1 bit):  Used to terminate a connection.<br><br><br>
 
 Window Size (16 bits):It is the total capacity of the user. 
 ![image](https://github.com/user-attachments/assets/c172fb36-ab4b-4360-8ad6-2a27955de678)
@@ -46,6 +45,7 @@ Used for error control.
 <br>
 <B>Urgent Pointer (16 bits):</b>
 Tells us the range of data which is urgent.
+
 ![image](https://github.com/user-attachments/assets/a96bc3da-c655-4c6a-8c78-fcd981d66329)
 
 <br>
