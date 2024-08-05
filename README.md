@@ -29,23 +29,28 @@ Reserved for future use and should be set to 0.<br>
 Flags (9 bits):
 
 Various control flags:
-URG (1 bit): Urgent pointer field significant.
-ACK (1 bit): Acknowledgment field significant.
-PSH (1 bit): Push Function.
-RST (1 bit): Reset the connection.
-SYN (1 bit): Synchronize sequence numbers (used to initiate a connection).
-FIN (1 bit): No more data from the sender (used to terminate a connection).
-Window Size (16 bits):
+CWR (1 bit):  It is set by the sender to indicate that it received a TCP segment with the ECE flag set.<br>
+ECE (1 bit):  It is used to indicate congestion to the sender.<br>
+URG (1 bit):  Urgent pointer is said to be 1 if the data contains some urgent data.<br>
+ACK (1 bit):  Acknowledgment flag is said to be 1 if it contains acknowledgement that the packet is recieved.<br>
+PSH (1 bit):  Push flag is set to be 1 if we want our data to be sent immediately.<br>
+RST (1 bit):  Used to reset a connection.<br>
+SYN (1 bit):  SYN flag is set to be 1 if we want to establish a connection .<br>
+FIN (1 bit):  Used to terminate a connection.<br>
 
+Window Size (16 bits):It is the total capacity of the user. 
+![image](https://github.com/user-attachments/assets/c172fb36-ab4b-4360-8ad6-2a27955de678)
 <br>
 <b>Checksum (16 bits):</b>
 Used for error control.
 <br>
 <B>Urgent Pointer (16 bits):</b>
 Tells us the range of data which is urgent.
+![image](https://github.com/user-attachments/assets/a96bc3da-c655-4c6a-8c78-fcd981d66329)
+
 <br>
 <b>Options and padding :</b>
-If we want to send some extra datan we can send them through options and padding.
+If we want to send some extra data we can send them through options and padding.
 </h3><br>
 <h2>UDP PACKET</h2>
 
