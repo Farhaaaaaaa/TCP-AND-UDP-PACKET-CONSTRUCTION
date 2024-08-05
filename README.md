@@ -4,7 +4,7 @@
 
 ![Screenshot 2024-07-30 105652](https://github.com/user-attachments/assets/a78a9c99-e801-4cc9-a8a7-a51f78377296)
 <h2>Let us analyze this TCP packet completely</h2>
-<B>Source Port (16 bits):</B>
+<h3><B>Source Port (16 bits):</B>
 The port number of the source.
 <br>
 <b>Destination Port (16 bits):</b>
@@ -46,7 +46,7 @@ Tells us the range of data which is urgent.
 <br>
 <b>Options and padding :</b>
 If we want to send some extra datan we can send them through options and padding.
-<br>
+</h3><br>
 <h2>UDP PACKET</h2>
 
 ![phptBFP20](https://github.com/user-attachments/assets/a4da21fc-0a6a-43f0-aa19-5359e0569295)
