@@ -57,9 +57,9 @@ If we want to send some extra data we can send them through options and padding.
 ![phptBFP20](https://github.com/user-attachments/assets/a4da21fc-0a6a-43f0-aa19-5359e0569295)
 # Now lets us analyze a UDP packet
 <H3>Here the source and destination port is exactly same as that of a TCP packet <br>
-LENGTH : specifies the length of the entire UDP packet, including the header and the data.
-CHECKSUM: : This field is used for error-checking of the header and data.
-This field contains the actual data being transmitted, which can be of variable length.
+LENGTH : specifies the length of the entire UDP packet, including the header and the data.<br>
+CHECKSUM: : This field is used for error-checking of the header and data.<br>
+APPLICATION LAYER DATA : This field contains the actual data being transmitted, which can be of variable length.
 
 </H3>
 
