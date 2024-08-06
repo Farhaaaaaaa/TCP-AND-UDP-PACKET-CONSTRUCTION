@@ -3,30 +3,30 @@
 <h2>TCP PACKET</h2>
 
 ![Screenshot 2024-07-30 105652](https://github.com/user-attachments/assets/a78a9c99-e801-4cc9-a8a7-a51f78377296)
-<h2>Let us analyze this TCP packet completely</h2>
-<h3><B>Source Port (16 bits):</B>
+<h1>Let us analyze this TCP packet completely</h1>
+<h3><B>SOURCE PORT (16 bits):</B>
 The port number of the source.
 <br>
-<b>Destination Port (16 bits):</b>
+<b>DESTINATION PORT (16 bits):</b>
 The port number of the receiving application.
 
 ![image](https://github.com/user-attachments/assets/c973b5ae-91d7-4763-a65d-e3c89d17ee98)
 <br>
-<B>Sequence Number (32 bits):</B>
+<B>SEQUENCE NUMBER (32 bits):</B>
  It indicates the position of the first byte of data in the data segment.<br>
  
  ![image](https://github.com/user-attachments/assets/e83cf94f-7338-4172-8e68-7d7be047f447)
 
-<B>Acknowledgment Number (32 bits):</B>
+<B>ACKNOWLEDGEMENT NUMBER (32 bits):</B>
 It determines  the sequence number of the next byte of the segment that the sender is expecting to receive..<br>
 
 ![image](https://github.com/user-attachments/assets/745a22c4-48d8-4e67-be75-86263168c468)
 
-<b>Data Offset (4 bits):</b>
+<b>DATA OFFSET (4 bits):</b>
 This field indicates the length of the TCP header in 32-bit words. The minimum value is 5 (for 20 bytes), and the maximum value is 15 (for 60 bytes).<br><br>
-<b>Reserved (3 bits):</b>
+<b>RESERVED (3 bits):</b>
 Reserved for future use and should be set to 0.<br><br>
-Flags (9 bits):
+FLAGS (9 bits):
 Various control flags:
 CWR (1 bit):  It is set by the sender to indicate that it received a TCP segment with the ECE flag set.<br>
 ECE (1 bit):  It is used to indicate congestion to the sender.<br>
@@ -37,19 +37,19 @@ RST (1 bit):  Used to reset a connection.<br>
 SYN (1 bit):  SYN flag is set to be 1 if we want to establish a connection .<br>
 FIN (1 bit):  Used to terminate a connection.<br><br><br>
 
-Window Size (16 bits):It is the total capacity of the user. 
+WINDOW SIZE (16 bits):It is the total capacity of the user. 
 ![image](https://github.com/user-attachments/assets/c172fb36-ab4b-4360-8ad6-2a27955de678)
 <br>
-<b>Checksum (16 bits):</b>
+<b>CHECKSUM (16 bits):</b>
 Used for error control.
 <br>
-<B>Urgent Pointer (16 bits):</b>
+<B>URGENT POINTER (16 bits):</b>
 Tells us the range of data which is urgent.
 
 ![image](https://github.com/user-attachments/assets/a96bc3da-c655-4c6a-8c78-fcd981d66329)
 
 <br>
-<b>Options and padding :</b>
+<b>OPTIONS AND PADDING :</b>
 If we want to send some extra data we can send them through options and padding.
 </h3><br>
 <h2>UDP PACKET</h2>
